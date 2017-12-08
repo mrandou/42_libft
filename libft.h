@@ -6,7 +6,7 @@
 /*   By: mrandou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2017/12/04 15:10:02 by mrandou          ###   ########.fr       */
+/*   Updated: 2017/12/07 19:00:05 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,6 @@ void			ft_lstadd(t_list **alst, t_list *newlist);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstnew(void const *content, size_t content_size);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list			*ft_lstrev(t_list *lst, t_list *prev);
 
 #endif
