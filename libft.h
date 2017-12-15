@@ -6,7 +6,7 @@
 /*   By: mrandou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2017/12/07 19:00:05 by mrandou          ###   ########.fr       */
+/*   Updated: 2017/12/15 11:34:29 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void			ft_putstr_fd(const char *str, int fd);
 void			ft_puttab(char **tab);
 void			ft_putendl(const char *str);
 void			ft_putendl_fd(const char *str, int fd);
+void			ft_putbn();
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strdup(const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
