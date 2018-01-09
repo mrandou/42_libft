@@ -6,7 +6,7 @@
 /*   By: mrandou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2017/12/15 11:34:29 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/01/09 15:34:09 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char			*ft_strcat(char *s1, const char *s2);
 char			*ft_strjoin(const char *s1, const char *s2);
 char			*ft_strchr(const char *str, int oc);
 char			*ft_strrchr(const char *str, int oc);
+char			*ft_strboc(char *str, int oc);
 char			*ft_strmap(char const *s, char (*f)(char));
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strnew(size_t size);
