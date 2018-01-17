@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 14:01:30 by mrandou           #+#    #+#             */
-/*   Updated: 2018/01/17 15:20:25 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/01/17 15:24:07 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_one_word(char *str, char c, int one)
 	if (!(tab = ft_strsplit(str, c)))
 		return (NULL);
 	word = ft_countword(str, c);
-	if (one == 0)
+	if (one == 'l')
 		return (tab[word - 1]);
 	else
 		return (tab[one]);
