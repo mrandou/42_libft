@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrandou <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/01/16 14:03:28 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/01/17 15:19:25 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strrec(char const *s, unsigned int start, unsigned int end);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
-char			*ft_last_word(char *str, char c);
+char			*ft_one_word(char *str, char c, int one);
 int				ft_nblen(int nb);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strcmp(const char *s1, const char *s2);

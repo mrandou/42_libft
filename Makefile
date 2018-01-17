@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mrandou <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2018/01/16 14:03:52 by mrandou          ###   ########.fr        #
+#    Updated: 2018/01/17 15:18:16 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS	=	./ft_atoi.c ./ft_bzero.c ./ft_countword.c ./ft_isalnum.c \
 			./ft_strtrim.c ./ft_tolower.c ./ft_toupper.c ./ft_strrec.c \
 			./ft_nblen.c ./ft_lstnew.c ./ft_lstdelone.c ./ft_lstdel.c \
 			./ft_lstadd.c ./ft_lstiter.c ./ft_lstmap.c ./ft_lstrev.c \
-			./ft_putbn.c ./ft_strboc.c ./ft_last_word.c
+			./ft_putbn.c ./ft_strboc.c ./ft_one_word.c
 
 
 OBJS	=	$(SRCS:.c=.o)
