@@ -6,7 +6,7 @@
 #    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2018/01/17 15:18:16 by mrandou          ###   ########.fr        #
+#    Updated: 2018/02/16 15:09:51 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS	=	./ft_atoi.c ./ft_bzero.c ./ft_countword.c ./ft_isalnum.c \
 			./ft_strtrim.c ./ft_tolower.c ./ft_toupper.c ./ft_strrec.c \
 			./ft_nblen.c ./ft_lstnew.c ./ft_lstdelone.c ./ft_lstdel.c \
 			./ft_lstadd.c ./ft_lstiter.c ./ft_lstmap.c ./ft_lstrev.c \
-			./ft_putbn.c ./ft_strboc.c ./ft_one_word.c
+			./ft_putbn.c ./ft_strboc.c ./ft_one_word.c ./ft_putlst.c
 
 
 OBJS	=	$(SRCS:.c=.o)
