@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/02/26 15:01:11 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/03/08 17:47:00 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ char			*ft_strrec(char const *s, unsigned int start, unsigned int end);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_one_word(char *str, char c, int one);
+char			ft_istoomutch(char *src, char *str);
 int				ft_nblen(int nb);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strcmp(const char *s1, const char *s2);
@@ -68,6 +69,8 @@ int				ft_tolower(int c);
 int				ft_countword(char const *str, char c);
 int				ft_atoi(const char *str);
 int				ft_strpfo(char *str, char oc);
+int				ft_lstlen(t_list *list);
+int				ft_countoc(char *str, char oc);
 size_t			ft_strlcat(char *dst, const char *src, size_t max);
 size_t			ft_strlen(const char *str);
 void			*ft_memset(void *b, int c, size_t len);
