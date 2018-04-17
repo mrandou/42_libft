@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putlst.c                                        :+:      :+:    :+:   */
+/*   ft_lstlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/16 15:07:43 by mrandou           #+#    #+#             */
-/*   Updated: 2018/03/28 14:10:05 by mrandou          ###   ########.fr       */
+/*   Created: 2018/02/26 17:15:14 by mrandou           #+#    #+#             */
+/*   Updated: 2018/02/26 17:16:19 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putlst(t_list *list)
+int	ft_lstlen(t_list *list)
 {
+	int	size;
+
+	size = 0;
 	while (list)
 	{
-		ft_putendl(list->content);
+		size = size + list->content_size;
 		list = list->next;
 	}
+	return (size);
 }

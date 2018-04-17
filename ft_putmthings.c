@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putlst.c                                        :+:      :+:    :+:   */
+/*   ft_putmthings.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/16 15:07:43 by mrandou           #+#    #+#             */
-/*   Updated: 2018/03/28 14:10:05 by mrandou          ###   ########.fr       */
+/*   Created: 2018/04/17 16:39:19 by mrandou           #+#    #+#             */
+/*   Updated: 2018/04/17 16:41:21 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putlst(t_list *list)
+void	ft_putmthings(char *s1, char *s2, char *s3, int i)
 {
-	while (list)
-	{
-		ft_putendl(list->content);
-		list = list->next;
-	}
+	if (!s1)
+		return ;
+	ft_putstr(s1);
+	if (s2)
+		ft_putstr(s2);
+	if (s3)
+		ft_putstr(s3);
+	if (i)
+		ft_putnbr(i);
+	ft_putbn();
 }

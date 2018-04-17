@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putlst.c                                        :+:      :+:    :+:   */
+/*   ft_countoc.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/16 15:07:43 by mrandou           #+#    #+#             */
-/*   Updated: 2018/03/28 14:10:05 by mrandou          ###   ########.fr       */
+/*   Created: 2018/03/05 13:23:46 by mrandou           #+#    #+#             */
+/*   Updated: 2018/04/17 14:35:02 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putlst(t_list *list)
+int	ft_countoc(char *str, char oc)
 {
-	while (list)
+	int	count;
+	int	i;
+
+	i = 0;
+	if (!str || !oc)
+		return (0);
+	count = 0;
+	while (str[i])
 	{
-		ft_putendl(list->content);
-		list = list->next;
+		if (str[i] == oc)
+			count++;
+		i++;
 	}
+	return (count);
 }
