@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putmthings.c                                    :+:      :+:    :+:   */
+/*   ft_int_is_here.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/17 16:39:19 by mrandou           #+#    #+#             */
-/*   Updated: 2018/04/19 14:51:16 by mrandou          ###   ########.fr       */
+/*   Created: 2018/04/19 15:26:36 by mrandou           #+#    #+#             */
+/*   Updated: 2018/04/19 15:29:42 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putmthings(char *s1, char *s2, char *s3, int i)
+int	ft_int_is_here(int nb, int i)
 {
-	if (!s1)
-		return ;
-	ft_putstr(s1);
-	if (s2)
-		ft_putstr(s2);
-	if (s3)
-		ft_putstr(s3);
-	if (i)
-		ft_putnbr(i);
-	ft_putbn();
+	int tmp;
+
+	tmp = 0;
+	while (nb)
+	{
+		tmp = nb % 10;
+		nb /= 10;
+		if (i == tmp)
+			return (1);
+	}
+	return (0);
 }

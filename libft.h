@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/04/17 16:42:50 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/04/19 15:30:32 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ int				ft_atoi(const char *str);
 int				ft_strpfo(char *str, char oc);
 int				ft_lstlen(t_list *list);
 int				ft_countoc(char *str, char oc);
+int				ft_int_is_here(int nb, int i);
 size_t			ft_strlcat(char *dst, const char *src, size_t max);
 size_t			ft_strlen(const char *str);
 void			*ft_memset(void *b, int c, size_t len);
