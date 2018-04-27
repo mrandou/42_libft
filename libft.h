@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/04/19 15:30:32 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/04/27 18:39:19 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef	struct	s_list
 }				t_list;
 
 void			ft_putchar(char c);
+void			ft_putnchar(char c, int nb);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr(const char *str);
 void			ft_putstr_fd(const char *str, int fd);
@@ -52,6 +53,7 @@ char			*ft_strrec(char const *s, unsigned int start, unsigned int end);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_one_word(char *str, char c, int one);
+char			*ft_strcut(char *src, int start, int end);
 char			ft_istoomutch(char *src, char *str);
 int				ft_nblen(int nb);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -94,6 +96,7 @@ void			ft_lstadd(t_list **alst, t_list *newlist);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_putlst(t_list *list);
 void			ft_putmthings(char *s1, char *s2, char *s3, int i);
+void			ft_mprintf(char *type, void *v1, void *v2, void *v3);
 t_list			*ft_lstnew(void const *content, size_t content_size);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstrev(t_list *lst, t_list *prev);
