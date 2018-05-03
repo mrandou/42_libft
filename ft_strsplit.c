@@ -6,7 +6,7 @@
 /*   By: mrandou <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 11:12:19 by mrandou           #+#    #+#             */
-/*   Updated: 2017/11/28 12:37:01 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/05/03 18:10:33 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ char	**ft_strsplit(char const *s, char c)
 			i++;
 		while (s[cpt + i] != c)
 			cpt++;
-		tab[k++] = ft_strrec(s, i, cpt + i);
+		if (!(tab[k++] = ft_strrec(s, i, cpt + i)))
+			return (NULL);
 		i = cpt + i;
 		cpt = 0;
 	}

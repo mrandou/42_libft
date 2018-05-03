@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putmthings.c                                    :+:      :+:    :+:   */
+/*   ft_strmjoin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/17 16:39:19 by mrandou           #+#    #+#             */
-/*   Updated: 2018/04/30 16:46:03 by mrandou          ###   ########.fr       */
+/*   Created: 2017/11/17 17:15:16 by mrandou           #+#    #+#             */
+/*   Updated: 2018/05/03 17:30:50 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putmthings(char *s1, char *s2, char *s3, int i)
+char	*ft_strmjoin(char const *s1, char const *s2, char const *s3)
 {
-	if (!s1)
-		return ;
-	ft_putstr(s1);
-	if (s2)
-		ft_putstr(s2);
-	if (s3)
-		ft_putstr(s3);
-	ft_putnbr(i);
-	ft_putbn();
+	int		i;
+	int		size;
+	char	*str;
+
+	i = 0;
+	if (!s1 || !s2 || !s3)
+		return (NULL);
+	size = ft_strlen(s1);
+	if (!(str = ft_strnew(size + ft_strlen(s2) + ft_strlen(s3) + 1)))
+		return (NULL);
+	ft_strcpy(str, s1);
+	while (s2[i])
+		str[size++] = s2[i++];
+	i = 0;
+	while (s3[i])
+		str[size++] = s3[i++];
+	str[size] = '\0';
+	return (str);
 }
