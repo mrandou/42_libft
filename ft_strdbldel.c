@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdel.c                                        :+:      :+:    :+:   */
+/*   ft_strdbldel.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/16 12:00:06 by mrandou           #+#    #+#             */
-/*   Updated: 2018/05/08 18:28:54 by mrandou          ###   ########.fr       */
+/*   Created: 2018/05/10 13:52:58 by mrandou           #+#    #+#             */
+/*   Updated: 2018/05/10 13:54:23 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strdel(char **as)
+void	ft_strdbldel(char **s1, char **s2)
 {
-	if (as)
+	if (s1)
 	{
-		if (*as)
+		if (*s1)
 		{
-			free(*as);
-			*as = NULL;
+			free(*s1);
+			*s1 = NULL;
+		}
+	}
+	if (s2)
+	{
+		if (*s2)
+		{
+			free(*s2);
+			*s2 = NULL;
 		}
 	}
 }

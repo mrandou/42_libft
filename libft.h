@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/05/03 17:32:48 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/05/10 13:55:25 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ void			*ft_memmove(void *s, const void *s2, size_t n);
 void			*ft_memalloc(size_t mem);
 void			ft_memdel(void **ap);
 void			ft_strdel(char **ap);
+void			ft_strdbldel(char **s1, char **s2);
 void			ft_putnbr(int nb);
 void			ft_putnbr_fd(int nb, int fd);
 void			ft_strclr(char *s);
