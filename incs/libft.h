@@ -6,13 +6,14 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/05/10 13:55:25 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/05/31 15:37:20 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef __FT_LIBFT_H
 # define __FT_LIBFT_H
 
+# include "get_next_line.h"
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -53,6 +54,7 @@ char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strrec(char const *s, unsigned int start, unsigned int end);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
+char			**ft_split_whitespaces(char *str);
 char			*ft_one_word(char *str, char c, int one);
 char			*ft_strcut(char *src, int start, int end);
 char			ft_istoomutch(char *src, char *str);
