@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrandou <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 11:12:19 by mrandou           #+#    #+#             */
-/*   Updated: 2018/05/03 18:10:33 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/05/17 17:29:16 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	**ft_strsplit(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		while (s[cpt + i] != c)
+		while (s[cpt + i] != c && s[cpt + i])
 			cpt++;
 		if (!(tab[k++] = ft_strrec(s, i, cpt + i)))
 			return (NULL);

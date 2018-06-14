@@ -6,7 +6,7 @@
 #    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2018/05/11 15:56:36 by mrandou          ###   ########.fr        #
+#    Updated: 2018/05/31 15:37:36 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ INC_DIR		=		incs/
 
 INC_NAME	=\
 	libft.h\
+	get_next_line.h
 
 INC			=		$(addprefix $(INC_DIR), $(INC_NAME))
 
@@ -58,7 +59,8 @@ SRC_NAME	=\
 	ft_putbn.c ft_strboc.c ft_one_word.c ft_putlst.c \
 	ft_strpfo.c ft_lstlen.c ft_countoc.c ft_istoomutch.c \
 	ft_putmthings.c ft_int_is_here.c ft_strcut.c ft_putnchar.c \
-	ft_mprintf.c ft_strmjoin.c ft_strdbldel.c
+	ft_mprintf.c ft_strmjoin.c ft_strdbldel.c get_next_line.c \
+	ft_split_whitespaces.c
 
 SRC			=		$(addprefix $(SRC_DIR), $(SRC_NAME))
 
