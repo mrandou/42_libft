@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/05/31 15:37:20 by mrandou          ###   ########.fr       */
+/*   Updated: 2018/06/15 17:27:24 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char			**ft_split_whitespaces(char *str);
 char			*ft_one_word(char *str, char c, int one);
 char			*ft_strcut(char *src, int start, int end);
 char			ft_istoomutch(char *src, char *str);
+char			*ft_strlowcase(char *str);
+char			*ft_strupcase(char *str);
 int				ft_nblen(int nb);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strcmp(const char *s1, const char *s2);
