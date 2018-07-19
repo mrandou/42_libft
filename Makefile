@@ -6,7 +6,7 @@
 #    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2018/07/18 15:53:46 by mrandou          ###   ########.fr        #
+#    Updated: 2018/07/19 13:44:12 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,6 +110,7 @@ clean:
 fclean:
 	rm -rf $(OBJ_DIR)
 	make -C . clean
+	rm $(NAME)
 
 print-% :
 	@echo $($*)
