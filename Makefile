@@ -6,7 +6,7 @@
 #    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2018/09/04 11:56:33 by mrandou          ###   ########.fr        #
+#    Updated: 2018/09/12 17:40:11 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ SRC_NAME	=\
 	ft_putmthings.c ft_int_is_here.c ft_strcut.c ft_putnchar.c \
 	ft_mprintf.c ft_strmjoin.c ft_strdbldel.c get_next_line.c \
 	ft_split_whitespaces.c ft_strupcase.c ft_strlowcase.c \
-	ft_isvisible.c
+	ft_isvisible.c ft_tabdel.c ft_strchg.c
 
 SRC			=		$(addprefix $(SRC_DIR), $(SRC_NAME))
 
