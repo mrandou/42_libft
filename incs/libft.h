@@ -101,7 +101,6 @@ void			ft_lstadd(t_list **alst, t_list *newlist);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_putlst(t_list *list);
 void			ft_putmthings(char *s1, char *s2, char *s3, int i);
-void			ft_mprintf(char *type, void *v1, void *v2, void *v3);
 void			ft_tabdel(char **tab);
 void			*ft_memchr(const void *s, int oc, size_t n);
 void			*ft_memcpy(void *s, const void *s2, size_t n);

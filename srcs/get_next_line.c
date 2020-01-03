@@ -37,9 +37,9 @@ int				get_next_line(const int fd, char **line)
 {
 	int					return_value;
 	char				*tmp;
-	static char			*stab[OPEN_MAX];
+	static char			*stab[F_OPEN_MAX];
 
-	if ((fd < 0) || (fd > OPEN_MAX) || (line == NULL))
+	if ((fd < 0) || (fd > F_OPEN_MAX) || (line == NULL))
 		return (-1);
 	if (stab[fd] == NULL && !(stab[fd] = ft_strnew(0)))
 		return (-1);

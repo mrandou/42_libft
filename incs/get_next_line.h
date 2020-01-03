@@ -17,6 +17,7 @@
 # include <limits.h>
 
 # define BUFF_SIZE 1024
+# define F_OPEN_MAX 10240
 
 int	get_next_line(const int fd, char **line);
 

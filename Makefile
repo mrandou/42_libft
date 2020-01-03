@@ -59,7 +59,7 @@ SRC_NAME	=\
 	ft_putbn.c ft_strboc.c ft_one_word.c ft_putlst.c \
 	ft_strpfo.c ft_lstlen.c ft_countoc.c ft_istoomutch.c \
 	ft_putmthings.c ft_int_is_here.c ft_strcut.c ft_putnchar.c \
-	ft_mprintf.c ft_strmjoin.c ft_strdbldel.c get_next_line.c \
+	ft_strmjoin.c ft_strdbldel.c get_next_line.c \
 	ft_split_whitespaces.c ft_strupcase.c ft_strlowcase.c \
 	ft_isvisible.c ft_tabdel.c ft_strchg.c
 
