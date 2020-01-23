@@ -6,7 +6,7 @@
 #    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2018/09/12 17:40:11 by mrandou          ###   ########.fr        #
+#    Updated: 2020/01/23 17:21:11 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ INC_DIR_ALL	=\
 ICFLAGS		=		$(addprefix -I, $(INC_DIR_ALL))
 
 #######
-# SRC #
+# SRC #0
 #######
 
 SRC_DIR		=		srcs/
@@ -96,24 +96,31 @@ RAN			=		ranlib
 all: 				$(NAME)
 
 $(NAME):			$(OBJ_DIR)	$(OBJ)
-	$(AR) $(NAME) $(OBJ)
-	$(RAN) $(NAME)
+	@$(AR) $(NAME) $(OBJ)
+	@$(RAN) $(NAME)
+	@printf "\033[K\r"
+	@printf "\r\033[32mLibft Compilation Done ✓\033[0m\n"
 
 $(OBJ_DIR):
-	mkdir -p $@
+	@mkdir -p $@
 
 $(OBJ_DIR)%.o:		 $(SRC_DIR)%.c ./Makefile $(INC)
-	$(CC) $(CFLAGS) $(ICFLAGS) -c $< -o $@
+	@printf "\n"
+	@$(CC) $(CFLAGS) $(ICFLAGS) -c $< -o $@
+	@printf $<
+	@printf "\033[K\r"
+	@printf "\033[1A"
+	@printf "\033[K\r"
+	@printf "\033[38;5;208mCompilation in progress...\033[0m\r"
 
 clean:
-	$(RM) $(OBJ)
+	@$(RM) $(OBJ)
+	@printf "All ---> \033[31mclean Done ✓\n\033[0m"
 
 fclean:
-	rm -rf $(OBJ_DIR)
-	make -C . clean
-	rm $(NAME)
-
-print-% :
-	@echo $($*)
+	@rm -rf $(OBJ_DIR)
+	@make -C . clean
+	@rm -f $(NAME)
+	@printf "All ---> \033[31mfclean Done ✓\n\033[0m"
 
 re: fclean all
