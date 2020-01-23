@@ -6,7 +6,7 @@
 #    By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/08 17:04:33 by mrandou           #+#    #+#              #
-#    Updated: 2020/01/23 17:21:11 by mrandou          ###   ########.fr        #
+#    Updated: 2020/01/23 17:55:16 by mrandou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,7 +99,7 @@ $(NAME):			$(OBJ_DIR)	$(OBJ)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RAN) $(NAME)
 	@printf "\033[K\r"
-	@printf "\r\033[32mLibft Compilation Done ✓\033[0m\n"
+	@printf "\rlibft Build \033[32mDone ✓\033[0m\n"
 
 $(OBJ_DIR):
 	@mkdir -p $@
@@ -111,7 +111,7 @@ $(OBJ_DIR)%.o:		 $(SRC_DIR)%.c ./Makefile $(INC)
 	@printf "\033[K\r"
 	@printf "\033[1A"
 	@printf "\033[K\r"
-	@printf "\033[38;5;208mCompilation in progress...\033[0m\r"
+	@printf "\033[38;5;208mBuild in progress...\033[0m\r"
 
 clean:
 	@$(RM) $(OBJ)
