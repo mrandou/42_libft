@@ -6,7 +6,7 @@
 /*   By: mrandou <mrandou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 18:09:09 by mrandou           #+#    #+#             */
-/*   Updated: 2018/09/12 17:39:39 by mrandou          ###   ########.fr       */
+/*   Updated: 2020/01/28 13:00:07 by mrandou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ int				ft_countoc(char *str, char oc);
 int				ft_int_is_here(int nb, int i);
 size_t			ft_strlcat(char *dst, const char *src, size_t max);
 size_t			ft_strlen(const char *str);
+size_t			ft_tablen(char **tab);
 t_list			*ft_lstnew(void const *content, size_t content_size);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstrev(t_list *lst, t_list *prev);
